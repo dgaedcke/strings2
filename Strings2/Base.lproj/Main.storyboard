@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eZG-hG-h0x">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Strings2-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Strings2" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Strings2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This Project Demonstrates:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2x-6W-Jt5">
+                                <rect key="frame" x="16" y="84" width="343" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Ag9-9M-ijy">
+                                <rect key="frame" x="89.5" y="133.5" width="196" height="400"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7U-6f-cSl">
+                                        <rect key="frame" x="0.0" y="0.0" width="196" height="32"/>
+                                        <color key="backgroundColor" red="0.63401413839999998" green="0.85490196080000003" blue="0.92941176469999998" alpha="0.46322737069999997" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Show / Toggle Tooltips"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="helpIdentifier" value="showTooltipButton"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="resetHelpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="btI-2Z-3pz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31s-NI-sLd">
+                                        <rect key="frame" x="0.0" y="92" width="196" height="32"/>
+                                        <color key="backgroundColor" red="0.63401413839999998" green="0.85490196080000003" blue="0.92941176469999998" alpha="0.46322737069999997" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="GeoFence Setup"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="helpIdentifier" value="showGeoFenceButton"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="geoFenceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dpO-k1-RoK"/>
+                                            <segue destination="C4O-DX-6Oi" kind="showDetail" identifier="selectContentSegue" action="showViewController:sender:" id="KyK-ay-sCJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ow6-9c-gU5">
+                                        <rect key="frame" x="0.0" y="184" width="196" height="32"/>
+                                        <color key="backgroundColor" red="0.63401413839999998" green="0.85490196080000003" blue="0.92941176469999998" alpha="0.46322737069999997" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Pre-Build Processing"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="helpIdentifier" value="preBuildProcessingButton"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kyp-sE-imL">
+                                        <rect key="frame" x="0.0" y="276" width="196" height="32"/>
+                                        <color key="backgroundColor" red="0.63401413839999998" green="0.85490196080000003" blue="0.92941176469999998" alpha="0.46322737069999997" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="String Localization"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="helpIdentifier" value="stringLocalizationButton"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7he-Jo-RXV">
+                                        <rect key="frame" x="0.0" y="368" width="196" height="32"/>
+                                        <color key="backgroundColor" red="0.63401413839999998" green="0.85490196080000003" blue="0.92941176469999998" alpha="0.46322737069999997" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Designable / Reset All Help"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="helpIdentifier" value="ibDesignableButton"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="ibDesignableBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="42x-9d-7I0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="viewHelpConfig" translatesAutoresizingMaskIntoConstraints="NO" id="RKC-TU-ZwI">
+                                <rect key="frame" x="0.0" y="533" width="334" height="134"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86997195510000003" green="0.86997195510000003" blue="0.86997195510000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ag9-9M-ijy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HPb-8h-h1S"/>
+                            <constraint firstItem="O2x-6W-Jt5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="OgS-sI-FpV"/>
+                            <constraint firstItem="O2x-6W-Jt5" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="XxD-pL-gLe"/>
+                            <constraint firstItem="O2x-6W-Jt5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fIH-0Y-6gQ"/>
+                            <constraint firstItem="Ag9-9M-ijy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gBP-jl-2hr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RKC-TU-ZwI" secondAttribute="bottom" id="vtx-v1-vTT"/>
+                            <constraint firstItem="RKC-TU-ZwI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wVZ-7q-Lid"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="S12-EL-vdJ"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="showHelpOnFirstAppearance" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="helpIdentifier" value="home"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="37.331334332833585"/>
+        </scene>
+        <!--Select Content-->
+        <scene sceneID="Dit-bv-GeT">
+            <objects>
+                <viewController title="Select Content" id="C4O-DX-6Oi" customClass="SelectContentViewController" customModule="Strings2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bbf-wz-Szu"/>
+                        <viewControllerLayoutGuide type="bottom" id="7PK-Aa-53D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DrM-Hs-49B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFq-Ay-4l5">
+                                <rect key="frame" x="93" y="200" width="188" height="32"/>
+                                <color key="backgroundColor" red="0.63401413839999998" green="0.85490196080000003" blue="0.92941176469999998" alpha="0.46322737069999997" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Pick a String to GeoFence"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="helpIdentifier" value="pickContentHelp"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="xl8-cX-cTQ" kind="showDetail" action="showViewController:sender:" id="lv0-Xw-BVX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86997195510000003" green="0.86997195510000003" blue="0.86997195510000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vFq-Ay-4l5" firstAttribute="centerX" secondItem="DrM-Hs-49B" secondAttribute="centerX" id="0F5-3d-aoJ"/>
+                            <constraint firstItem="vFq-Ay-4l5" firstAttribute="centerY" secondItem="DrM-Hs-49B" secondAttribute="centerY" constant="-117.5" id="jfW-7D-OK9"/>
+                        </constraints>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="showHelpOnFirstAppearance" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="helpIdentifier" value="selectContent"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j2A-29-17v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1712.8" y="36.431784107946029"/>
+        </scene>
+        <!--Share Region-->
+        <scene sceneID="oDh-ld-QEk">
+            <objects>
+                <viewController storyboardIdentifier="fencesVC" title="Share Region" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xl8-cX-cTQ" customClass="FencesViewController" customModule="Strings2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vla-FZ-8RZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="lTr-fM-0rn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9gi-Fm-4jg" userLabel="ContentView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jf1-hL-Wpo">
+                                <rect key="frame" x="16" y="36" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Set Region Centerpoint"/>
+                                    <segment title="Set Region Size" enabled="NO"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeMapMode:" destination="xl8-cX-cTQ" eventType="valueChanged" id="oYJ-ZF-8Cv"/>
+                                </connections>
+                            </segmentedControl>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="uTh-ch-svG">
+                                <rect key="frame" x="0.0" y="80" width="375" height="527"/>
+                                <connections>
+                                    <outlet property="delegate" destination="xl8-cX-cTQ" id="MWs-YM-BHK"/>
+                                </connections>
+                            </mapView>
+                            <view autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lK0-ka-kTy" userLabel="radiusDetectView">
+                                <rect key="frame" x="0.0" y="80" width="375" height="527"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red_circle" translatesAutoresizingMaskIntoConstraints="NO" id="hWx-zu-zrd">
+                                        <rect key="frame" x="142" y="218" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="MfT-un-Dmo"/>
+                                            <constraint firstAttribute="width" secondItem="hWx-zu-zrd" secondAttribute="height" multiplier="1:1" id="Pgl-EN-sPn"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="hWx-zu-zrd" firstAttribute="centerX" secondItem="lK0-ka-kTy" secondAttribute="centerX" id="Lbb-jp-diz"/>
+                                    <constraint firstItem="hWx-zu-zrd" firstAttribute="centerY" secondItem="lK0-ka-kTy" secondAttribute="centerY" id="ycd-H7-jf0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="helpIdentifier" value="pinchForRadiusHelp"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="B07-JC-SvD">
+                                <rect key="frame" x="16" y="619" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Map View"/>
+                                    <segment title="Hybrid"/>
+                                    <segment title="Satellite"/>
+                                </segments>
+                                <connections>
+                                    <action selector="mapTypeChangedWithSender:" destination="xl8-cX-cTQ" eventType="valueChanged" id="Do3-A4-wSw"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="B07-JC-SvD" secondAttribute="trailing" id="04j-UJ-JJ7"/>
+                            <constraint firstItem="lK0-ka-kTy" firstAttribute="top" secondItem="vla-FZ-8RZ" secondAttribute="bottom" constant="60" id="4iz-zM-XMY"/>
+                            <constraint firstItem="lTr-fM-0rn" firstAttribute="top" secondItem="B07-JC-SvD" secondAttribute="bottom" constant="20" id="8gH-7g-K0E"/>
+                            <constraint firstItem="uTh-ch-svG" firstAttribute="top" secondItem="vla-FZ-8RZ" secondAttribute="bottom" constant="60" id="AIL-pL-tzF"/>
+                            <constraint firstAttribute="trailing" secondItem="lK0-ka-kTy" secondAttribute="trailing" id="CZq-Bt-blf"/>
+                            <constraint firstItem="B07-JC-SvD" firstAttribute="leading" secondItem="9gi-Fm-4jg" secondAttribute="leadingMargin" id="DCW-Tv-PZQ"/>
+                            <constraint firstItem="lTr-fM-0rn" firstAttribute="top" secondItem="lK0-ka-kTy" secondAttribute="bottom" constant="60" id="EQI-5R-iOt"/>
+                            <constraint firstItem="lK0-ka-kTy" firstAttribute="leading" secondItem="9gi-Fm-4jg" secondAttribute="leading" id="ZJ6-yc-sAA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jf1-hL-Wpo" secondAttribute="trailing" id="Zsv-NO-REo"/>
+                            <constraint firstItem="uTh-ch-svG" firstAttribute="leading" secondItem="9gi-Fm-4jg" secondAttribute="leading" id="cHq-TS-uS2"/>
+                            <constraint firstItem="lTr-fM-0rn" firstAttribute="top" secondItem="uTh-ch-svG" secondAttribute="bottom" constant="60" id="sEJ-uA-3Yb"/>
+                            <constraint firstItem="jf1-hL-Wpo" firstAttribute="leading" secondItem="9gi-Fm-4jg" secondAttribute="leadingMargin" id="vfP-rn-2lr"/>
+                            <constraint firstAttribute="trailing" secondItem="uTh-ch-svG" secondAttribute="trailing" id="wsU-nv-hiv"/>
+                            <constraint firstItem="jf1-hL-Wpo" firstAttribute="top" secondItem="vla-FZ-8RZ" secondAttribute="bottom" constant="16" id="wze-tl-1LM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="circleWidthConstraint" destination="MfT-un-Dmo" id="tNK-S9-DeZ"/>
+                        <outlet property="gestureOverlayView" destination="lK0-ka-kTy" id="xwY-zk-KdW"/>
+                        <outlet property="mapModeControl" destination="jf1-hL-Wpo" id="93g-Si-csz"/>
+                        <outlet property="mapView" destination="uTh-ch-svG" id="7aC-pF-oa2"/>
+                        <outlet property="mapViewDetailControl" destination="B07-JC-SvD" id="Z4n-9p-qs3"/>
+                        <outlet property="pinchableImageView" destination="hWx-zu-zrd" id="j4o-oZ-XhV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yib-oc-WQb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2487" y="37"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="O0h-z1-s7i">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eZG-hG-h0x" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="deX-lL-dwq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7qB-pv-0dP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JbH-lg-pq9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="red_circle" width="90" height="90"/>
+        <image name="viewHelpConfig" width="334" height="134"/>
+    </resources>
+</document>

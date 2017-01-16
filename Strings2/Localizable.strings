@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  Strings2
+
+  Created by Dewey Gaedcke on 12/27/16.
+  Copyright © 2016 Dewey Gaedcke. All rights reserved.
+*/
+
+// home screen
+"showTooltipButton" = "turns help overlays on and off";
+"showGeoFenceButton" = "select a string & set fence on it";
+"preBuildProcessingButton" = "prep of project assets";
+"stringLocalizationButton" = "convert string to enum (refs strongly typed)";
+"ibDesignableButton" = "Show Help On..(below) controls each screen config";
+// select string screen
+"pickContentHelp" = "Select the String you would like to Geographically restrict";
+
+// used on fences view
+"pinchForRadiusHelp" = "Pinch the map to set size of your content geo-fence";
+"mapAnnotationTitle" = "Region Centerpoint";
+"setFenceRadiusInstructions" = "Tap X to set centerpoint, then pinch to set geo-fence size.";
+"tapToSetRadius" = "Tap on the circle to set size of geo-fence";
